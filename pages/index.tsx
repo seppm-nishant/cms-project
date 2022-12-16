@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { Inter } from "@next/font/google";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,9 +27,11 @@ export default function Home() {
               deleniti maxime possimus adipisci consequatur.
             </p>
 
-            <button className="text-xl text-white px-8 py-2 rounded-md bg-blue-500 hover:bg-blue-600">
-              Enter
-            </button>
+            <Link href={"/login"}>
+              <button className="text-xl text-white px-8 py-2 rounded-md bg-blue-500 hover:bg-blue-600">
+                Enter
+              </button>
+            </Link>
           </div>
 
           <div>

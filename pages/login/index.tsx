@@ -17,12 +17,16 @@ const Login = () => {
               Admin login
             </button>
           </Link>
-          <button className="text-xl w-full bg-blue-500 rounded-md text-white py-2 hover:bg-blue-600">
-            Staff login
-          </button>
-          <button className="text-xl w-full bg-blue-500 rounded-md text-white py-2 hover:bg-blue-600">
-            Student login
-          </button>
+          <Link href={"/login/staffLogin"}>
+            <button className="text-xl w-full bg-blue-500 rounded-md text-white py-2 hover:bg-blue-600">
+              Staff login
+            </button>
+          </Link>
+          <Link href={"login/studentLogin"}>
+            <button className="text-xl w-full bg-blue-500 rounded-md text-white py-2 hover:bg-blue-600">
+              Student login
+            </button>
+          </Link>
         </div>
       </div>
     </div>
